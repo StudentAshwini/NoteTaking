@@ -1,0 +1,134 @@
+body {
+	background-image: url("note.jpg");
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+
+.no{
+   margin-left: 250px;
+   font-size: 50px;
+}
+
+.head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.change-mode {
+	background-image: url('notetaking.jpg');
+	background-size: cover;
+}
+
+.change-mode h1 {
+	color: aqua;
+	font-style: oblique;
+	font-weight: bolder;
+	
+}
+
+.frame {
+	max-width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	min-height: 100vh;
+}
+.notes-list {
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: repeat(
+		auto-fill,
+		minmax(250px, 1fr)
+	);
+}
+.note.new {
+	background-color:rgb(121, 181, 207);
+}
+
+textarea {
+	border: none;
+	resize: none;
+	background-color: #26c76c86;
+	border-radius: 20px;
+	padding: 10px;
+	font-size: large;
+	border-color: black;
+	border-style: groove;
+	color: aliceblue;
+	font-style:italic;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+.save {
+	background-color: #ba34a4d3;
+	border: none;
+	width: 130px;
+	height: 50px;
+	border-radius: 15px;
+	padding: 5px 10px 5px 10px;
+	border-style: double;
+	border-color: black;
+
+}
+
+.save:hover {
+	background-color: #ededed;
+	cursor: pointer;
+}
+
+.note {
+	background-color: #1f202000;
+	border-radius: 20px;
+	padding: 2rem;
+	min-height: 180px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	white-space: pre-wrap;
+	border-style:solid;
+	border-color: rgb(220, 20, 120);
+	
+	box-shadow: 10px 10px 10px 12px rgb(16, 8, 8),  10px 10px 15px 10px plum,10px 10px 10px 15px rgb(163, 101, 101),  8px 10px 15px 10px rgb(199, 221, 160);
+	font-size: large;
+	font-weight: bolder;
+	border-width: 3px;
+}
+
+.note-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.delete-icon {
+	cursor: pointer;
+}
+
+.find {
+	display: flex;
+	align-items: center;
+	background-color: rgb(233, 233, 233);
+	border-radius: 20px;
+	padding: 5px;
+	margin-bottom: 1.5em;
+	height: 50px;
+	border-style: solid ;
+	border-color: rgb(14, 14, 14);	
+}
+
+.find input {
+	border: none;
+	background-color: rgb(233, 233, 233);
+	width: 100%;
+	color: rgb(24, 4, 4);
+	font-size: large;
+}
+
+.find input:focus {
+	outline: none;
+}
